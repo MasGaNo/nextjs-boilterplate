@@ -23,3 +23,13 @@ Currently, there is no fancy options, neither input validator, neither error man
   - [ESLint React](https://github.com/yannickcr/eslint-plugin-react) & [ESLint React Hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks)
   - [ESModule import](https://github.com/benmosher/eslint-plugin-import)
 - Latest [Prettier](https://prettier.io/)
+
+## Manual configuration
+After executing for the first time the development server, add to `tsconfig.json`:
+```json
+{
+  "compilerOptions": {
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  }
+}
+```
